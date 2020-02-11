@@ -87,7 +87,7 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detours\lib.X64\;C:\Microsoft\detours\include;</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
@@ -103,13 +103,13 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detours\lib.X64\;C:\Microsoft\detours\include;</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x64;%(AdditionalLibraryDirectories);\Lua\5.3\lib;\Lua\5.3\lib;E:\CppProjeler\LOL\PPlat\DWPH\Lua\5.3\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x64;%(AdditionalLibraryDirectories);\Lua\5.3\lib;\Lua\5.3\lib;E:\CppProjeler\LOL\PPlat\DWPH\Lua\5.3\lib;C:\Microsoft\detours\lib.X64;C:\Microsoft\detours\include;</AdditionalLibraryDirectories>
       <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>

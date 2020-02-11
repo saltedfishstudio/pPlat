@@ -205,7 +205,7 @@ public:
 	double CalcAttackTime()
 	{
 		typedef float(__cdecl* fnGetAttackDelay)(GameObject* pObj, int index);
-		fnGetAttackDelay stGet = reinterpret_cast<fnGetAttackDelay>(MAKE_RVA(Offsets::SpellHelper::ComputeCharacterAttackDelay)); // 1. ÝNDEX 57 8B 7C 24 08 8B 87 ? ? ? ? 8D 8F ? ? ? ?
+		fnGetAttackDelay stGet = reinterpret_cast<fnGetAttackDelay>(MAKE_RVA(Offsets::SpellHelper::ComputeCharacterAttackDelay)); // 1. ?DEX 57 8B 7C 24 08 8B 87 ? ? ? ? 8D 8F ? ? ? ?
 		float delay = stGet(this, 64);
 		float ChampionBaseAttackSpeed = 1 / delay;
 		float retn  = 1 / ChampionBaseAttackSpeed;
@@ -289,7 +289,7 @@ public:
 	MAKE_GET(GoldTotal, float, Offsets::Obj_AIBase::GoldTotal);
 	MAKE_GET(Spellbook, Spellbook, Offsets::Spellbook::SpellbookInst);
 	MAKE_GET(CharData, CharDataInfo, Offsets::Obj_AIBase::CharData);
-	MAKE_GET(Begin, BuffNode*, Offsets::BuffManagerStruct::GetBegin);// objectin içinde oldugu için buraya alýyorum 
+	MAKE_GET(Begin, BuffNode*, Offsets::BuffManagerStruct::GetBegin);// objectin i?nde oldugu i?n buraya al?orum 
 	MAKE_GET(End, BuffNode*, Offsets::BuffManagerStruct::GetEnd); 
 };
 

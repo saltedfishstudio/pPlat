@@ -52,7 +52,7 @@ using namespace pPlat::Native;
 extern TargetSelector*targetselector;
 #include "OrbWalker.hpp"
 #include "TospikThresh.h"
-#include "TospikBlitz.h" // test blüzzzzzzzzzz
+#include "TospikBlitz.h" // test bl?zzzzzzzzz
 #include "LCoreTest.hpp"
 #include "TospikCait.hpp"
 #include "TospikBrand.hpp"
