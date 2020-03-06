@@ -1,3 +1,4 @@
+
 LSRender render;
 
 
@@ -75,10 +76,10 @@ void DirectxMenu(LPDIRECT3DDEVICE9 pDevice)
 	pDevice->SetSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_NONE);
 }
 
-int HataYakala(int code, PEXCEPTION_POINTERS ex) {
-	printf("Hata Kodu : %p  , Lokasyon : %p\n", code, ex->ExceptionRecord->ExceptionAddress);
-	return EXCEPTION_EXECUTE_HANDLER;
-}
+//int HataYakala(int code, PEXCEPTION_POINTERS ex) {
+//	printf("Hata Kodu : %p  , Lokasyon : %p\n", code, ex->ExceptionRecord->ExceptionAddress);
+//	return EXCEPTION_EXECUTE_HANDLER;
+//}
 
 void LSMenu()
 {
@@ -159,14 +160,25 @@ void r3dMainLoop()
 {
 	float health = 100;
 	DWORD ptrr = reinterpret_cast<DWORD>(&health);
-	
+
+	ENGINE_MSG("Start r3dMainLoop");
 
 	do
 	{
 		Sleep(100);
 	} while (!Game::IsInGame());
 	Sleep(1000);
-	pComponent::ComponentEvents_onStart();
+
+	ENGINE_MSG("IsInGame");
+
+	// temporal
+	//pComponent::ComponentEvents_onStart();
+	
+	auto local = ObjectManager::GetPlayer();
+	string* a = &local->GetName();
+	ENGINE_MSG(a->c_str());
+	
+	return;
 	
 	while (true)
 	{
@@ -209,27 +221,52 @@ void r3dHooks()
 	//walker->Add();
 
 	
-	targetselector->Add();
+	//targetselector->Add();
 
-	LCoreTest*test = new LCoreTest();
-	test->Add();
-	TosbikBlitz * blitz = new TosbikBlitz();
+	//LCoreTest*test = new LCoreTest();
+	//test->Add();
+	
+	/*TosbikBlitz * blitz = new TosbikBlitz();
 	blitz->Add();
 	TospikThresh*thresh = new TospikThresh();
 	thresh->Add();
 
 	TospikCait*cait = new TospikCait();
-	cait->Add();
+	cait->Add();*/
 
-	OrbWalker*walker = new OrbWalker();
-	walker->Add();
+	//OrbWalker*walker = new OrbWalker();
+	//walker->Add();
 
-	TospikBrand*brand = new TospikBrand();
-	brand->Add();
+	//TospikBrand*brand = new TospikBrand();
+	//brand->Add();
+	//
+	//White* white = new White();
+	//white->Add();
+	
+	float health = 100;
+	DWORD ptrr = reinterpret_cast<DWORD>(&health);
 
+	//ENGINE_MSG("Start r3dMainLoop");
 
-	LSUtils::CreateThreadA(r3dMainLoop);	 
+	do
+	{
+		Sleep(100);
+	} while (!Game::IsInGame());
+	Sleep(1000);
 
+	//ENGINE_MSG("IsInGame");
+
+	// temporal
+	//pComponent::ComponentEvents_onStart();
+
+	auto local = ObjectManager::GetPlayer();
+	string* a = &local->GetName();
+	
+	//ENGINE_MSG(a->c_str());
+	
+	//LSUtils::CreateThreadA(r3dMainLoop);
+	
+	return;
 	r3dEndScene.Apply(vTable[42], [](LPDIRECT3DDEVICE9 pDevice) -> HRESULT {
 		render.Attach(pDevice);
 
@@ -297,8 +334,6 @@ void r3dHooks()
 	
 	 DWORD adr;
 	 DWORD hD3D = 0;
-
-
 	
 	 do
 	 {
@@ -314,7 +349,7 @@ void r3dHooks()
 	 if (adr)
 	 {
 		 memcpy(&vTable, (void *)(adr + 2), 4);
-		 ENGINE_MSG("pPlat Initialized\n");
+		 //ENGINE_MSG("pPlat Initialized\n");
 		 r3dHooks();
 	 }
  }
@@ -326,9 +361,10 @@ BOOL WINAPI DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
 	{
 	case DLL_PROCESS_ATTACH:
 		DisableThreadLibraryCalls(hModule);
-		AllocConsole();
+		//AllocConsole();
 		freopen("CONOUT$", "w", stdout);
-		LSUtils::CreateThreadA(HookStart);
+		//LSUtils::CreateThreadA(HookStart);
+		HookStart();
 		break;
 	default:
 		break;

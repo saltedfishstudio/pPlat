@@ -1,6 +1,12 @@
 #include "stdafx.h"
 #include "Obj_AI_Base.h"
 
+//#ifdef _X86_
+//using namespace Detours::X86;
+//#elif _X64_
+//using namespace Detours::X64;
+//#endif
+
 MAKE_HOOK<convention_type::stdcall_t, void, GameObjectOrder, RVector3*, GameObject*, DWORD, DWORD, DWORD> EventIssueOrder;
 typedef void(__thiscall* tIssueOrder)(void*thiss, int Mode, RVector3* Pos, GameObject *target, int a4, int a5, char a7);
 tIssueOrder issueP;

@@ -1,3 +1,9 @@
+//#ifdef _X86_
+//using namespace Detours::X86;
+//#elif _X64_
+//using namespace Detours::X64;
+//#endif
+
 #include "stdafx.h"
 #include "SpellBook.h"
 typedef void(__thiscall* fnCastSpell)(void* spellbook, SpellDataInst* a2, signed int spell_slot, RVector3* target_position, RVector3* startPos, int target_network_id);

@@ -9,7 +9,7 @@ Obj_AI_Base* ObjectManager::GetPlayer()
 GameObject** ObjectManager::GetUnitArray()
 {
 	auto bb = reinterpret_cast<GameObject**>(MAKEPTR(Offsets::ObjectManager::ObjectList));
-	return bb; //benm objectlistime göre 3 kez deðil 2 kez castlanýyor
+	return bb; //benm objectlistime g?e 3 kez de?l 2 kez castlan?or
 }
 
 std::vector<GameObject*> ObjectManager::GetMinions(ObjectTeam type)

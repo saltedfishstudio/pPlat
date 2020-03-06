@@ -1,7 +1,7 @@
 #pragma once
-#include "imgui\imgui.h"
-#include "imgui\imgui_tabs.h"
-#include "imgui\imgui_impl_dx9.h"
+#include <Github/pPlat/imgui/imgui.h>
+#include <Github/pPlat/imgui/imgui_tabs.h>
+#include <Github/pPlat/imgui/imgui_impl_dx9.h>
 #include <d3d9.h>
 #include <d3dx9.h>
 #define DIRECTINPUT_VERSION 0x0800
@@ -12,7 +12,7 @@ typedef unsigned int  uint;
 
 #include <dinput.h>
 #include <tchar.h>
-#include <detours.h>
+#include <Microsoft/detour-legacy/detours.h>
 #include <cstdint>
 #include <conio.h>
 #include <vector>
@@ -52,7 +52,7 @@ using namespace pPlat::Native;
 extern TargetSelector*targetselector;
 #include "OrbWalker.hpp"
 #include "TospikThresh.h"
-#include "TospikBlitz.h" // test bl?zzzzzzzzz
+#include "TospikBlitz.h"
 #include "LCoreTest.hpp"
 #include "TospikCait.hpp"
 #include "TospikBrand.hpp"
@@ -67,4 +67,4 @@ extern TargetSelector*targetselector;
 #pragma comment(lib,"d3dx9.lib")
 
 
-
+#include "White.hpp"

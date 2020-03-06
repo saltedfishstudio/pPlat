@@ -2,17 +2,35 @@
 #ifndef ORBWALKER
 #define ORBWALKER
 
-class OrbWalker : public pComponent
+#include "KeyCode.h"
+
+class OrbWalker final : public pComponent
 {
 public:
-	bool bDrawADRange = true,bKite = true,bOrbWalker=true,bHumanizer=false,bRightClick=false,bEvade=true;
-	float evadeMultipler = 5.0f;
-	float HoldRadius = 100;
-	float totaldmg = 0;
-	int combokey = VK_SPACE, laneclearkey = 0x56, lasthitkey = 0x58, resetkey = VK_CAPITAL;
+	bool drawAttackRange = true;
+	bool kite = true;
+	bool bOrbWalker = true;
+	bool bHumanizer = false;
+	bool bRightClick = false;
+	bool bEvade = true;
+	
+	float evadeMultiplier = 5.0f;
+	float holdRadius = 100;
+	float totalDamage = 0;
 
-	OrbWalker() { strcpy(classname, "OrbWalker"); strcpy(version, "0.0.3"); };
-	~OrbWalker() {};
+	int comboKey = VK_CAPITAL;
+	
+	int laneClearKey = VK_KEYBOARD_V;
+	int lastHitKey = VK_KEYBOARD_X;
+	
+	int resetKey = VK_F7;
+
+	OrbWalker()
+	{
+		strcpy(classname, "OrbWalker"); strcpy(version, "0.0.3");
+	};
+	
+	virtual ~OrbWalker() {};
 	DWORD movetimer, attacktimer;
 	float ClickerDelay = 10.0f;
 	float pWindMultipler = 1.1f;
@@ -26,7 +44,7 @@ public:
 			return;
 		
 		auto cursorpos = *Game::Cursor()->GetPosition();
-		if (cursorpos.Distance(ObjectManager::GetPlayer()->GetPosition())< HoldRadius)
+		if (cursorpos.Distance(ObjectManager::GetPlayer()->GetPosition())< holdRadius)
 			return;
 
 		if (bRightClick)
@@ -60,7 +78,7 @@ public:
 	double CalcWindup()
 	{
 		typedef float(__cdecl* fnGetAttackDelay)(GameObject* pObj, int index);
-		fnGetAttackDelay stGet = reinterpret_cast<fnGetAttackDelay>(MAKE_RVA(Offsets::SpellHelper::ComputeCharacterAttackCastDelay)); // 83 ec ? 53 8b 5c ? ? 8b cb 56 ---- 2. ÝNDEX 57 8B 7C 24 08 8B 87 ? ? ? ? 8D 8F ? ? ? ?
+		fnGetAttackDelay stGet = reinterpret_cast<fnGetAttackDelay>(MAKE_RVA(Offsets::SpellHelper::ComputeCharacterAttackCastDelay)); // 83 ec ? 53 8b 5c ? ? 8b cb 56 ---- 2. ?DEX 57 8B 7C 24 08 8B 87 ? ? ? ? 8D 8F ? ? ? ?
 		float delay = stGet((GameObject*)ObjectManager::GetPlayer(), 1);
 		float pDelay = delay * 2.0f;
 		//ENGINE_MSG("Windup  %f , pDelay : %f\n", delay, pDelay);
@@ -359,11 +377,11 @@ public:
 		if (localplayer == nullptr)
 			return;
 
-		if (bKite)
+		if (kite)
 		{
 			LastHitLogic();
 
-			if (GetAsyncKeyState(combokey) < 0)
+			if (GetAsyncKeyState(comboKey) < 0)
 			{
 			
 				if (targetselector->target !=nullptr)
@@ -372,12 +390,12 @@ public:
 				}
 				else
 				{
-					Orbwalk(nullptr, false); // hedef yoksa düz yürü
+					Orbwalk(nullptr, false); // hedef yoksa d? y??
 				}
 			}
 
 	
-			if (GetAsyncKeyState(laneclearkey))//V tusu
+			if (GetAsyncKeyState(laneClearKey))//V tusu
 			{
 				auto target = GetLaneClearTarget();
 				if (target.success)
@@ -507,7 +525,7 @@ public:
 	{
 		if (EvadeWalkerDisable)
 			return;
-		if (GetAsyncKeyState(lasthitkey))
+		if (GetAsyncKeyState(lastHitKey))
 		{
 			auto minos = GetLastHitMinionEx();
 
@@ -523,7 +541,7 @@ public:
 	}
 	void LaneClearLogic()
 	{
-		if (GetAsyncKeyState(laneclearkey))
+		if (GetAsyncKeyState(laneClearKey))
 		{
 			
 		}
@@ -560,7 +578,7 @@ public:
 
 			RVector3 pos2d, spell2d, spellStart2d, spellend2d, local2d;
 
-			RVector3 spos = getSpellPosition(mInfo, evadeMultipler);
+			RVector3 spos = getSpellPosition(mInfo, evadeMultiplier);
 			render.r3dWorldToScreen(&spos, &spell2d); // missile cur pos
 			render.r3dWorldToScreen(&mInfo->startPos, &spellStart2d);// missile startpos
 			render.r3dWorldToScreen(&mInfo->endPos, &spellend2d);// missile end
@@ -704,7 +722,7 @@ public:
 			//}
 		
 
-		if(bDrawADRange)
+		if(drawAttackRange)
 		lol::r3dDrawCircle.Call(&localplayer->GetPosition(), localplayer->GetAttackRange(), &color, 0, 0, 0, 1);
 
 		/*Cleaner*/
@@ -802,24 +820,24 @@ public:
 		if (ImGui::TreeNode("OrbWalker"))
 		{
 			ui::Checkbox("Enabled", &bOrbWalker);
-			ui::Checkbox("Auto Kite", &bKite);
+			ui::Checkbox("Auto Kite", &kite);
 			ui::Checkbox("Right Click", &bRightClick);
-			ui::Checkbox("Draw Attack Range", &bDrawADRange);
+			ui::Checkbox("Draw Attack Range", &drawAttackRange);
 			if (ImGui::TreeNode("Evade"))
 			{
 				ui::Checkbox("Evade LineSkills", &bEvade);
-				ui::SliderFloat("Evade Speed", &evadeMultipler, 0, 20);
+				ui::SliderFloat("Evade Speed", &evadeMultiplier, 0, 20);
 				ImGui::TreePop();
 			}
 
-			ui::SliderFloat("Hold Radius", &HoldRadius, 100, 250);
+			ui::SliderFloat("Hold Radius", &holdRadius, 100, 250);
 			ui::SliderFloat("Move Delay", &pWindMultipler, 0, 10);
-			ui::SliderFloat("AD Damage", &totaldmg, 0, 1500);
+			ui::SliderFloat("AD Damage", &totalDamage, 0, 1500);
 
-			ui::Hotkey("Combo", &combokey);
-			ui::Hotkey("Lane Clear", &laneclearkey);
-			ui::Hotkey("Last Hit", &lasthitkey);
-			ui::Hotkey("Reset Target", &resetkey);
+			ui::Hotkey("Combo", &comboKey);
+			ui::Hotkey("Lane Clear", &laneClearKey);
+			ui::Hotkey("Last Hit", &lastHitKey);
+			ui::Hotkey("Reset Target", &resetKey);
 		   ImGui::TreePop();
 		}
 		if (ImGui::TreeNode("Humanizer"))

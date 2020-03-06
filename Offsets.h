@@ -52,9 +52,14 @@ public:
 
 	enum class ObjectManager
 	{
-		LocalPlayer = 0x2E2FEF8, //8.10
+		//LocalPlayer = 0x2E2FEF8, //8.10
+		//UnderMouseObj = 0x21D3DE4,//8.10
+		
+		LocalPlayer = 0x34387F4, //10.3
 		ObjectList = 0x2E2D658,//8.10
-		UnderMouseObj = 0x21D3DE4,//8.10
+		UnderMouseObj = 0x3426384,//10.3 - 1
+		//
+		//UnderMouseObj = 0x1B33F60,//10.3 -2
 	};
 
 	enum class GameObjectFunctions
@@ -62,7 +67,6 @@ public:
 		OnDamage = 0x0,
 		IssueOrder = 0x1C9EA0,//8.10 - 81 ec ? ? ? ? 53 8b d9 c7 44 24 08
 	};
-
 
 	enum class SpellHelper
 	{

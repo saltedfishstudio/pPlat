@@ -17,13 +17,17 @@ extern std::vector<DWORD>enemyinhibs;
 class pComponent
 {
 public:
-	pComponent(){};
-	~pComponent() {};
+	pComponent()
+	{
+		
+	};
+	virtual ~pComponent() {};
 	virtual void onStart() = 0;
 	virtual void onUpdate() = 0;
 	virtual void onRender() = 0;
 	virtual void onMenu() = 0;
 	virtual void onProcessSpell(SpellData*spelldata,SpellCastInfo*spellcastinfo) = 0;
+	
 	void Add()
 	{
 		pComponents.push_back(reinterpret_cast<DWORD>(this));
@@ -54,9 +58,10 @@ public:
 	}
 	static void ComponentEvents_onStart()
 	{
-	
-		Obj_AI_Base::ApplyHooks();
-		Spellbook::ApplyHooks();
+
+		// temp co
+		//Obj_AI_Base::ApplyHooks();
+		//Spellbook::ApplyHooks();
 
 		for (DWORD pPtr : pComponents)
 		{

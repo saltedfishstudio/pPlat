@@ -36,11 +36,11 @@ public:
 
 		if (forcetarget != nullptr)
 			if (!forcetarget->isValid() || !*forcetarget->GetVisible())
-				forcetarget = nullptr; // seçilmiþ hedef ölüyse veya visible deðilse nulle 
+				forcetarget = nullptr; // se?lmi?hedef ??se veya visible de?lse nulle 
 
 		if (target != nullptr)
 			if (!target->isValid() || !*target->GetVisible())
-				target = nullptr; // seçilmiþ hedef ölüyse veya visible deðilse nulle 
+				target = nullptr; // se?lmi?hedef ??se veya visible de?lse nulle 
 	}
 
 

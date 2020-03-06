@@ -163,6 +163,9 @@
     <ClCompile Include="String.cpp">
       <Filter>Utils\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="White.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LSUtils.hpp">
@@ -293,6 +296,8 @@
     <ClInclude Include="TargetSelector.hpp">
       <Filter>Components\Scripts\TargetSelector</Filter>
     </ClInclude>
+    <ClInclude Include="KeyCode.h" />
+    <ClInclude Include="White.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="TODOS.txt" />

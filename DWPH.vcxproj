@@ -87,13 +87,13 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detours\lib.X64\;C:\Microsoft\detours\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detour-legacy</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;%(AdditionalLibraryDirectories);\Lua\5.3\lib;\Lua\5.3\lib;E:\CppProjeler\LOL\PPlat\DWPH\Lua\5.3\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;%(AdditionalLibraryDirectories);\Lua\5.3\lib;\Lua\5.3\lib;E:\CppProjeler\LOL\PPlat\DWPH\Lua\5.3\lib;C:\Microsoft\detour-legacy</AdditionalLibraryDirectories>
       <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
@@ -103,7 +103,7 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detours\lib.X64\;C:\Microsoft\detours\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detours-master\x64\Debug;;C:\Microsoft\detours-master\detours</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
@@ -120,7 +120,7 @@
       <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detours-master\Win32\Release;C:\Microsoft\detours-master\detours</AdditionalIncludeDirectories>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -142,7 +142,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;Lua\5.3\include\;C:\Microsoft\detours-master\x64\Release;;C:\Microsoft\detours-master\detours</AdditionalIncludeDirectories>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
@@ -185,6 +185,7 @@
     </ClCompile>
     <ClCompile Include="String.cpp" />
     <ClCompile Include="typdefs.cpp" />
+    <ClCompile Include="White.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adDetour.hpp" />
@@ -203,6 +204,7 @@
     <ClInclude Include="imgui\stb_rect_pack.h" />
     <ClInclude Include="imgui\stb_textedit.h" />
     <ClInclude Include="imgui\stb_truetype.h" />
+    <ClInclude Include="KeyCode.h" />
     <ClInclude Include="LBuffInstance.h" />
     <ClInclude Include="LCoreTest.hpp" />
     <ClInclude Include="LObjectManager.h" />
@@ -231,6 +233,7 @@
     <ClInclude Include="TospikCait.hpp" />
     <ClInclude Include="TospikThresh.h" />
     <ClInclude Include="typdefs.h" />
+    <ClInclude Include="White.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="TODOS.txt" />
