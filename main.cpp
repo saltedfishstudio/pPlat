@@ -331,7 +331,6 @@ void r3dHooks()
 
  void HookStart()
  {
-	
 	 DWORD adr;
 	 DWORD hD3D = 0;
 	
@@ -363,8 +362,8 @@ BOOL WINAPI DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
 		DisableThreadLibraryCalls(hModule);
 		//AllocConsole();
 		freopen("CONOUT$", "w", stdout);
-		//LSUtils::CreateThreadA(HookStart);
-		HookStart();
+		LSUtils::CreateThreadA(HookStart);
+		//HookStart();
 		break;
 	default:
 		break;

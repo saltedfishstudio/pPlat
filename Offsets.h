@@ -52,14 +52,9 @@ public:
 
 	enum class ObjectManager
 	{
-		//LocalPlayer = 0x2E2FEF8, //8.10
-		//UnderMouseObj = 0x21D3DE4,//8.10
-		
-		LocalPlayer = 0x34387F4, //10.3
-		ObjectList = 0x2E2D658,//8.10
-		UnderMouseObj = 0x3426384,//10.3 - 1
-		//
-		//UnderMouseObj = 0x1B33F60,//10.3 -2
+		LocalPlayer = 0x348B45C,			// 10.6 au hotfix
+		ObjectList = 0x2E2D658,				// 8.10
+		UnderMouseObj = 0x3478D84,			// 10.6 au hotfix
 	};
 
 	enum class GameObjectFunctions

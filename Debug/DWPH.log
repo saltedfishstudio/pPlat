@@ -1,4 +1,659 @@
-﻿  main.cpp
+﻿  stdafx.cpp
+C:\Github\pPlat\rVectors.hpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Github\pPlat\r3dRitoRender.h(5,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\r3dRitoRender.h(5,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\r3dRitoRender.h(6,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\r3dRitoRender.h(6,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\r3dRitoRender.h(7,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\r3dRitoRender.h(7,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\r3dRitoRender.h(8,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\r3dRitoRender.h(8,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Game.hpp(6,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Game.hpp(6,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\BuffManagerBase.h(14,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\BuffManagerBase.h(14,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\BuffManagerBase.h(15,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\BuffManagerBase.h(15,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Github\pPlat\SpellBook.h(67,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(67,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(68,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(68,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(69,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(69,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(70,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(70,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(71,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(71,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(72,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(72,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(73,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(73,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(74,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(74,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(75,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(75,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(97,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(97,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(98,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(98,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(99,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(99,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(100,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(100,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(101,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(101,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(154,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(154,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(155,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(155,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(156,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(156,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(157,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(157,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(158,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(158,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\SpellBook.h(159,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\SpellBook.h(159,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\GameObject.h(118,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\GameObject.h(118,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\GameObject.h(168,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\GameObject.h(168,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\GameObject.h(169,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\GameObject.h(169,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\GameObject.h(170,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\GameObject.h(170,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\GameObject.h(171,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\GameObject.h(171,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\GameObject.h(172,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\GameObject.h(172,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(11,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(11,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(12,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(12,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(13,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(13,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(14,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(14,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(15,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(15,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(16,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(16,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(17,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(17,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(18,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(18,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(19,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(19,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(20,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(20,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(21,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(21,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(22,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(22,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(23,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(23,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(24,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(24,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(25,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(25,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(26,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(26,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(27,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(27,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(28,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(28,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(29,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(29,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\AttackableUnit.h(30,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\AttackableUnit.h(30,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\LObjectManager.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Github\pPlat\LBuffInstance.h(6,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\LBuffInstance.h(6,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\LBuffInstance.h(156,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\LBuffInstance.h(156,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\LBuffInstance.h(157,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\LBuffInstance.h(157,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\LBuffInstance.h(158,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\LBuffInstance.h(158,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\LBuffInstance.h(160,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\LBuffInstance.h(160,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\LBuffInstance.h(161,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\LBuffInstance.h(161,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(11,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(11,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(12,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(12,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(13,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(13,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(14,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(14,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(15,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(15,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(16,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(16,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(17,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(17,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(18,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(18,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(19,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(19,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(20,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(20,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(21,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(21,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(22,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(22,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(23,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(23,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(24,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(24,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(25,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(25,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(26,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(26,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(27,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(27,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(28,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(28,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(29,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(29,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(30,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(30,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(31,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(31,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(32,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(32,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(33,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(33,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(34,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(34,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(35,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(35,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(36,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(36,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(37,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(37,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(38,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(38,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(39,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(39,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(40,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(40,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(41,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(41,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(42,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(42,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(43,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(43,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(44,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(44,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(45,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(45,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(46,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(46,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(47,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(47,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(48,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(48,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(49,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(49,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(50,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(50,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(51,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(51,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(52,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(52,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(53,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(53,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(54,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(54,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(55,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(55,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(56,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(56,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(57,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(57,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(58,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(58,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(59,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(59,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(103,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(103,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(104,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(104,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(105,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(105,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(107,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(107,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(108,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(108,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(110,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(110,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(187,23): warning C4244: '=': conversion from 'int' to 'char', possible loss of data
+C:\Github\pPlat\Obj_AI_Base.h(262,44): warning C4100: 'range': unreferenced formal parameter
+C:\Github\pPlat\Obj_AI_Base.h(286,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(286,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(287,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(287,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(288,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(288,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(289,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(289,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(290,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(290,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(291,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(291,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(292,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(292,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Obj_AI_Base.h(293,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'int'
+C:\Github\pPlat\Obj_AI_Base.h(293,2): warning C4477: 'printf' : format string '%p' requires an argument of type 'void *', but variadic argument 1 has type 'DWORD'
+C:\Github\pPlat\Prediction.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Github\pPlat\LSRender.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Github\pPlat\LSRender.h(71,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Github\pPlat\Prediction.h(11): warning C4091: 'static ': ignored on left of 'LinePrediction::LineInfo_t' when no variable is declared
+C:\Github\pPlat\Prediction.h(174,48): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\ExpPredict.hpp(142,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Github\pPlat\ExpPredict.hpp(142,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Github\pPlat\ExpPredict.hpp(260,9): warning C4189: 'vectorDist': local variable is initialized but not referenced
+C:\Github\pPlat\ExpPredict.hpp(275,9): warning C4189: 'distance': local variable is initialized but not referenced
+C:\Github\pPlat\typdefs.h(7,131): warning C4138: '*/' found outside of comment
+C:\Github\pPlat\typdefs.h(7,163): warning C4138: '*/' found outside of comment
+C:\Github\pPlat\TargetSelector.hpp(13,19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : see declaration of 'strcpy'
+C:\Github\pPlat\TargetSelector.hpp(15,57): warning C4100: 'spellcastinfo': unreferenced formal parameter
+C:\Github\pPlat\TargetSelector.hpp(15,32): warning C4100: 'spelldata': unreferenced formal parameter
+C:\Github\pPlat\OrbWalker.hpp(30,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : see declaration of 'strcpy'
+C:\Github\pPlat\OrbWalker.hpp(187,8): warning C4189: 'local': local variable is initialized but not referenced
+C:\Github\pPlat\OrbWalker.hpp(246): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(246,46): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(228,41): warning C4100: 'LastHit': unreferenced formal parameter
+C:\Github\pPlat\OrbWalker.hpp(315,10): warning C4189: 'lasthealth': local variable is initialized but not referenced
+C:\Github\pPlat\OrbWalker.hpp(316,15): warning C4189: 'target': local variable is initialized but not referenced
+C:\Github\pPlat\OrbWalker.hpp(317,9): warning C4189: 'local': local variable is initialized but not referenced
+C:\Github\pPlat\OrbWalker.hpp(452,48): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(534,48): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(603,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Github\pPlat\OrbWalker.hpp(609,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Github\pPlat\OrbWalker.hpp(585,53): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(598,55): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(622,54): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(674,64): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(726,52): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\OrbWalker.hpp(669,8): warning C4189: 'local': local variable is initialized but not referenced
+C:\Github\pPlat\TospikThresh.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Github\pPlat\TospikThresh.h(12,17): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : see declaration of 'strcpy'
+C:\Github\pPlat\TospikThresh.h(14,57): warning C4100: 'spellcastinfo': unreferenced formal parameter
+C:\Github\pPlat\TospikThresh.h(14,32): warning C4100: 'spelldata': unreferenced formal parameter
+C:\Github\pPlat\TospikThresh.h(100,1): warning C4456: declaration of 'pred' hides previous local declaration
+C:\Github\pPlat\TospikThresh.h(82,10): message : see declaration of 'pred'
+C:\Github\pPlat\TospikThresh.h(103,1): warning C4456: declaration of 'Predict' hides previous local declaration
+C:\Github\pPlat\TospikThresh.h(83,14): message : see declaration of 'Predict'
+C:\Github\pPlat\TospikThresh.h(103,1): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Github\pPlat\TospikBlitz.h(13,16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : see declaration of 'strcpy'
+C:\Github\pPlat\TospikBlitz.h(15,57): warning C4100: 'spellcastinfo': unreferenced formal parameter
+C:\Github\pPlat\TospikBlitz.h(15,32): warning C4100: 'spelldata': unreferenced formal parameter
+C:\Github\pPlat\TospikBlitz.h(82,22): warning C4018: '<': signed/unsigned mismatch
+C:\Github\pPlat\TospikBlitz.h(82,1): warning C4804: '>': unsafe use of type 'bool' in operation
+C:\Github\pPlat\TospikBlitz.h(111,22): warning C4018: '<': signed/unsigned mismatch
+C:\Github\pPlat\TospikBlitz.h(99,44): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\TospikBlitz.h(203,70): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\LCoreTest.hpp(11,14): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : see declaration of 'strcpy'
+C:\Github\pPlat\LCoreTest.hpp(65): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\LCoreTest.hpp(98,24): warning C4244: '=': conversion from 'int' to 'char', possible loss of data
+C:\Github\pPlat\LCoreTest.hpp(116): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\LCoreTest.hpp(65,53): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\LCoreTest.hpp(102,70): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\LCoreTest.hpp(116,69): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\TospikCait.hpp(12,15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : see declaration of 'strcpy'
+C:\Github\pPlat\TospikCait.hpp(14,57): warning C4100: 'spellcastinfo': unreferenced formal parameter
+C:\Github\pPlat\TospikCait.hpp(14,32): warning C4100: 'spelldata': unreferenced formal parameter
+C:\Github\pPlat\TospikCait.hpp(58,1): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Github\pPlat\TospikCait.hpp(73,1): warning C4456: declaration of 'pred' hides previous local declaration
+C:\Github\pPlat\TospikCait.hpp(57,10): message : see declaration of 'pred'
+C:\Github\pPlat\TospikCait.hpp(76,1): warning C4456: declaration of 'Predict' hides previous local declaration
+C:\Github\pPlat\TospikCait.hpp(58,14): message : see declaration of 'Predict'
+C:\Github\pPlat\TospikCait.hpp(82,1): warning C4456: declaration of 'pred' hides previous local declaration
+C:\Github\pPlat\TospikCait.hpp(57,10): message : see declaration of 'pred'
+C:\Github\pPlat\TospikCait.hpp(85,1): warning C4456: declaration of 'Predict' hides previous local declaration
+C:\Github\pPlat\TospikCait.hpp(58,14): message : see declaration of 'Predict'
+C:\Github\pPlat\TospikCait.hpp(83,11): warning C4189: 'kaciyor': local variable is initialized but not referenced
+C:\Github\pPlat\TospikBrand.hpp(14,57): warning C4100: 'spellcastinfo': unreferenced formal parameter
+C:\Github\pPlat\TospikBrand.hpp(14,32): warning C4100: 'spelldata': unreferenced formal parameter
+C:\Github\pPlat\TospikBrand.hpp(85,1): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Github\pPlat\White.hpp(17,30): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\White.hpp(32,7): warning C4189: 'pcolor': local variable is initialized but not referenced
+C:\Github\pPlat\White.hpp(31,8): warning C4189: 'local': local variable is initialized but not referenced
+C:\Github\pPlat\BuffManagerBase.h(15): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\BuffManagerBase.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\BuffManagerBase.h(15): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\BuffManagerBase.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(68): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(67): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(68): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(67): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(69): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(69): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(70): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(70): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(71): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(71): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(72): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(72): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(73): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(73): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(74): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(74): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(75): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(75): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(97): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(97): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(98): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(98): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(99): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(99): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(100): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(100): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(101): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(101): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(154): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(154): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(155): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(155): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(156): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(156): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(158): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(158): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(157): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(157): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(159): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\SpellBook.h(159): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(118): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(118): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(168): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(168): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(169): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(169): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(170): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(170): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(171): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(171): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(172): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(172): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(11): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(11): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(13): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(12): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(13): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(12): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(15): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(15): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(16): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(16): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(17): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(18): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(17): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(18): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(19): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(19): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(20): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(20): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(22): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(21): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(22): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(21): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(23): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(23): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(24): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(24): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(26): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(25): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(26): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(25): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(27): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(27): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(28): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(28): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(29): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(30): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(30): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(29): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(156): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(156): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(157): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(157): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(158): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(158): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(160): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(160): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(161): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(161): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(11): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(12): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(11): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(12): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(13): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(13): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(15): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(16): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(15): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(17): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(18): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(18): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(19): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(19): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(20): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(20): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(21): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(21): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(22): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(22): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(16): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(23): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(23): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(24): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(24): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(25): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(25): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(26): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(26): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(27): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(27): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(28): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(28): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(30): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(30): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(31): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(31): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(32): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(32): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(33): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(33): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(34): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(34): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(35): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(36): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(36): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(29): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(29): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(37): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(38): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(38): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(37): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(39): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(39): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(40): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(40): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(41): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(41): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(42): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(42): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(43): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(43): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(44): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(44): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(45): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(45): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(17): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(46): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(46): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(35): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(48): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(48): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(49): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(49): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(51): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(51): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(50): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(50): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(52): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(52): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(53): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(53): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(54): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(54): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(56): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(56): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(55): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(55): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(57): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(57): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(58): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(58): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(59): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(59): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(103): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(103): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(104): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(104): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(105): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(105): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(107): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(107): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(110): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(110): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(108): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(108): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(47): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(47): warning C4172: returning address of local variable or temporary: TT
+  BuffManagerBase.cpp
+  GameObject.cpp
+  Humanizer.cpp
+C:\Github\pPlat\Humanizer.cpp(11,29): warning C4018: '>=': signed/unsigned mismatch
+C:\Github\pPlat\Humanizer.cpp(24,29): warning C4018: '>=': signed/unsigned mismatch
+  LBuffInstance.cpp
+C:\Github\pPlat\LBuffInstance.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Github\pPlat\LBuffInstance.cpp(3,48): warning C4100: 'id': unreferenced formal parameter
+C:\Github\pPlat\LBuffInstance.cpp(7,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Github\pPlat\LBuffInstance.cpp(100,27): warning C4018: '<': signed/unsigned mismatch
+  LObjectManager.cpp
+C:\Github\pPlat\LObjectManager.cpp(60,94): warning C4100: 'entity': unreferenced formal parameter
+C:\Github\pPlat\LObjectManager.cpp(60,74): warning C4100: 'range': unreferenced formal parameter
+  LSRender.cpp
+C:\Github\pPlat\LSRender.cpp(195,1): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1400): message : see declaration of '_vsnprintf'
+C:\Github\pPlat\LSRender.cpp(299,44): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(299,33): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(299,13): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(300,32): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(300,20): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(300,13): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(301,28): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(301,20): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(301,13): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(302,46): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(302,34): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+C:\Github\pPlat\LSRender.cpp(302,25): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+  Logging.cpp
+C:\Github\pPlat\Logging.cpp(5,1): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(506): message : see declaration of 'localtime'
+  Memory.cpp
+  Obj_AI_Base.cpp
+C:\Github\pPlat\Obj_AI_Base.cpp(13,50): warning C4100: 'Unknown': unreferenced formal parameter
+C:\Github\pPlat\Obj_AI_Base.cpp(80,77): warning C4244: 'argument': conversion from 'int' to 'char', possible loss of data
+  Obj_Hero.cpp
+  Obj_Minion.cpp
+  ObjectManager.cpp
+  Prediction.cpp
+C:\Github\pPlat\Prediction.cpp(35,46): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\Prediction.cpp(42,46): warning C4238: nonstandard extension used: class rvalue used as lvalue
+C:\Github\pPlat\Prediction.cpp(55,80): warning C4100: 'missilespeed': unreferenced formal parameter
+  SpellBook.cpp
+C:\Github\pPlat\SpellBook.cpp(11,57): warning C4100: 'unk1': unreferenced formal parameter
+C:\Github\pPlat\SpellBook.cpp(11,48): warning C4100: 'unk': unreferenced formal parameter
+C:\Github\pPlat\SpellBook.cpp(34,110): warning C4100: 'triggerFuck': unreferenced formal parameter
+C:\Github\pPlat\SpellBook.cpp(46,48): warning C4100: 'triggerEvent': unreferenced formal parameter
+C:\Github\pPlat\SpellBook.cpp(72,58): warning C4100: 'edx': unreferenced formal parameter
+C:\Github\pPlat\SpellBook.cpp(76,7): warning C4189: 'param3': local variable is initialized but not referenced
+C:\Github\pPlat\SpellBook.cpp(77,7): warning C4189: 'param1': local variable is initialized but not referenced
+C:\Github\pPlat\SpellBook.cpp(79,7): warning C4189: 'param5': local variable is initialized but not referenced
+C:\Github\pPlat\SpellBook.cpp(78,7): warning C4189: 'param4': local variable is initialized but not referenced
+  String.cpp
+  White.cpp
+C:\Github\pPlat\White.cpp(15,65): warning C4100: 'spellcastinfo': unreferenced formal parameter
+C:\Github\pPlat\White.cpp(15,39): warning C4100: 'spelldata': unreferenced formal parameter
+  aDetour.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  Generating Code...
+C:\Github\pPlat\Game.hpp(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Game.hpp(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(286): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(286): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(110): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(110): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(291): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(291): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(38): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(38): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(5): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(7): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(5): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(7): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(8): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\r3dRitoRender.h(8): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(168): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(168): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Game.hpp(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Game.hpp(6): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(171): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\GameObject.h(171): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(292): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(293): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(292): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(293): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(286): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(286): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(107): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(107): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(108): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\Obj_AI_Base.h(108): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(156): warning C4172: returning address of local variable or temporary: TT
+C:\Github\pPlat\LBuffInstance.h(156): warning C4172: returning address of local variable or temporary: TT
+  Compiling...
+  imgui_impl_dx9.cpp
+  imgui_tabs.cpp
+C:\Github\pPlat\imgui\imgui_tabs.cpp(806,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : see declaration of 'sprintf'
+  main.cpp
 C:\Github\pPlat\main.cpp(178,29): warning C4238: nonstandard extension used: class rvalue used as lvalue
 C:\Github\pPlat\main.cpp(162,8): warning C4189: 'ptrr': local variable is initialized but not referenced
 C:\Github\pPlat\main.cpp(263,29): warning C4238: nonstandard extension used: class rvalue used as lvalue
@@ -6,6 +661,10 @@ C:\Github\pPlat\main.cpp(263,10): warning C4189: 'a': local variable is initiali
 C:\Github\pPlat\main.cpp(247,8): warning C4189: 'ptrr': local variable is initialized but not referenced
 C:\Github\pPlat\main.cpp(365,1): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message : see declaration of 'freopen'
+  typdefs.cpp
+C:\Github\pPlat\typdefs.cpp(3,124): warning C4138: '*/' found outside of comment
+C:\Github\pPlat\typdefs.cpp(3,156): warning C4138: '*/' found outside of comment
+  Generating Code...
 C:\Github\pPlat\main.cpp(186): warning C4702: unreachable code
 C:\Github\pPlat\main.cpp(190): warning C4702: unreachable code
 C:\Github\pPlat\main.cpp(209): warning C4702: unreachable code
@@ -16,4 +675,5 @@ C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local 
 C:\Github\pPlat\AttackableUnit.h(14): warning C4172: returning address of local variable or temporary: TT
 C:\Github\pPlat\GameObject.h(168): warning C4172: returning address of local variable or temporary: TT
 C:\Github\pPlat\GameObject.h(168): warning C4172: returning address of local variable or temporary: TT
+     Creating library C:\Github\pPlat\Debug\PPLat.lib and object C:\Github\pPlat\Debug\PPLat.exp
   DWPH.vcxproj -> C:\Github\pPlat\Debug\PPLat.dll
