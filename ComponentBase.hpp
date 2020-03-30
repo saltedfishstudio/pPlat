@@ -60,8 +60,8 @@ public:
 	{
 
 		// temp co
-		//Obj_AI_Base::ApplyHooks();
-		//Spellbook::ApplyHooks();
+		Obj_AI_Base::ApplyHooks();
+		Spellbook::ApplyHooks();
 
 		for (DWORD pPtr : pComponents)
 		{

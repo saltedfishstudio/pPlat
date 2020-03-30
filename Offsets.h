@@ -52,7 +52,7 @@ public:
 
 	enum class ObjectManager
 	{
-		LocalPlayer = 0x348B45C,			// 10.6 au hotfix
+		LocalPlayer = 0x348B4A8,			// 10.6 au hotfix
 		ObjectList = 0x2E2D658,				// 8.10
 		UnderMouseObj = 0x3478D84,			// 10.6 au hotfix
 	};

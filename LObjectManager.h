@@ -33,7 +33,7 @@ public:
 
 		return reinterpret_cast<GameObject*>(obj);
 	}
-	//mouse en yakýn hedefi alýr
+	//mouse en yak? hedefi al?
 	static GameObject*GetNearMouseTarget();
 	static GameObject* GetUnitByIndex(uint index);
 	static GameObject* GetUnitByNetworkId(uint networkId);

@@ -10,7 +10,13 @@ class Game
 public:
 	static bool IsInGame()
 	{
-		return (MAKEPTR(Offsets::ObjectManager::LocalPlayer)) > 0;
+		auto localPlayerAddress = *reinterpret_cast<DWORD*>(MAKE_RVA(Offsets::ObjectManager::LocalPlayer));
+		if (localPlayerAddress == NULL)
+		{
+			return false;
+		}
+
+		return true;
 	}
 	static r3dCursor*Cursor()
 	{

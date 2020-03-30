@@ -10,6 +10,7 @@ static bool MenuIsOpen = true;
 static HWND GameWindow =  FindWindowA("Dx9", 0);
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 static  DWORD *vTable;
+LRESULT WINAPI hkWndProc(HWND window, UINT message_type, WPARAM w_param, LPARAM l_param);
 MAKE_HOOK<convention_type::stdcall_t, HRESULT, LPDIRECT3DDEVICE9, CONST RECT *, CONST RECT *, HWND, CONST RGNDATA * > r3dPresentEx;
 MAKE_HOOK<convention_type::stdcall_t, HRESULT, LPDIRECT3DDEVICE9> r3dEndScene;
 MAKE_HOOK<convention_type::stdcall_t, HRESULT, LPDIRECT3DDEVICE9, D3DPRIMITIVETYPE, INT, UINT, UINT, UINT, UINT > r3dDrawPrimtive;
@@ -20,7 +21,194 @@ bool check[255];
 std::vector<DWORD>pComponents;
 TargetSelector*targetselector = new TargetSelector();
 
+void HookStart();
+void r3dHooks();
+void r3dMainLoop();
+void DirectxMenu(LPDIRECT3DDEVICE9 pDevice);
+void LSMenu();
+void D3DXMatrixDraw(const D3DXMATRIX* pM);
+void ImGuiEx(LPDIRECT3DDEVICE9 pDevice);
 
+BOOL WINAPI DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
+{
+	UNREFERENCED_PARAMETER(lpReserved);
+	switch (dwReason)
+	{
+	case DLL_PROCESS_ATTACH:
+		DisableThreadLibraryCalls(hModule);
+		//AllocConsole();
+		//freopen("CONOUT$", "w", stdout);
+		LSUtils::CreateThreadA(HookStart);
+		//HookStart();
+		break;
+	default:
+		break;
+	}
+	return TRUE;
+}
+void HookStart()
+{
+	DWORD adr;
+	DWORD hD3D = 0;
+
+	do
+	{
+		GameWindow = FindWindowA(0, "League of Legends (TM) Client");
+		Sleep(100);
+	} while (!GameWindow);
+	hD3D = (DWORD)GetModuleHandleA("d3d9.dll");
+	do
+	{
+		hD3D = (DWORD)GetModuleHandleA("d3d9.dll");
+	} while (!hD3D);
+	adr = LSUtils::FindPattern(hD3D, 0x128000, (PBYTE)"\xC7\x06\x00\x00\x00\x00\x89\x86\x00\x00\x00\x00\x89\x86", "xx????xx????xx");
+	if (adr)
+	{
+		memcpy(&vTable, (void*)(adr + 2), 4);
+		//ENGINE_MSG("pPlat Initialized\n");
+		r3dHooks();
+	}
+}
+void r3dHooks()
+{
+	if (!vTable)
+		return;
+
+	//static ObjectManager *objectmanager = new ObjectManager();
+	//OrbWalker*walker = new OrbWalker();
+	//walker->Add();
+
+
+	//targetselector->Add();
+
+	//LCoreTest*test = new LCoreTest();
+	//test->Add();
+
+	/*TosbikBlitz * blitz = new TosbikBlitz();
+	blitz->Add();
+	TospikThresh*thresh = new TospikThresh();
+	thresh->Add();
+
+	TospikCait*cait = new TospikCait();
+	cait->Add();*/
+
+	//OrbWalker*walker = new OrbWalker();
+	//walker->Add();
+
+	//TospikBrand*brand = new TospikBrand();
+	//brand->Add();
+	//
+	//White* white = new White();
+	//white->Add();
+
+	//float health = 100;
+	//DWORD ptrr = reinterpret_cast<DWORD>(&health);
+
+	//ENGINE_MSG("Start r3dMainLoop");
+
+	//do
+	//{
+	//	Sleep(100);
+	//} while (!Game::IsInGame());
+	//Sleep(1000);
+
+	//ENGINE_MSG("IsInGame");
+
+	// temporal
+	//pComponent::ComponentEvents_onStart();
+
+	//auto local = ObjectManager::GetPlayer();
+	//string* a = &local->GetName();
+
+	//ENGINE_MSG(a->c_str());
+
+	LSUtils::CreateThreadA(r3dMainLoop);
+
+	//return;
+	r3dEndScene.Apply(vTable[42], [](LPDIRECT3DDEVICE9 pDevice) -> HRESULT {
+		render.Attach(pDevice);
+
+		/*if (Game::IsInGame())
+			pComponent::ComponentsEvent_onRender();*/
+
+		ImGuiEx(pDevice);
+
+		/*for (ObjectManager*tmp : ObjectManager::GetAllObjects())
+		{
+			RVector3 Screen;
+			if (tmp->GetObjectType() == ObjectManager::ObjectType::HERO)
+				if (render.r3dWorldToScreen(&tmp->GetPosition(), &Screen))
+				{
+					render.DrawString(Screen.x, Screen.y, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "object : %02x", tmp->GetObjectType());
+				}
+
+			if (tmp->GetObjectType() == ObjectManager::ObjectType::HERO)
+			{
+
+
+			}
+			else if (tmp->GetObjectType() == ObjectManager::ObjectType::MINION)
+			{
+				RVector3 Screen;
+				if (render.r3dWorldToScreen(&tmp->GetPosition(), &Screen))
+				{
+					render.DrawString(Screen.x, Screen.y, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "Minion");
+				}
+			}
+			else if (tmp->GetObjectType() == ObjectManager::ObjectType::TURRET)
+			{
+
+			}
+			else if (tmp->GetObjectType() == ObjectManager::ObjectType::INHIB)
+			{
+
+			}
+		}*/
+
+		HRESULT pp = r3dEndScene.CallOriginal(pDevice);
+		return pp;
+		});
+
+
+	r3dResetEx.Apply(vTable[16], [](LPDIRECT3DDEVICE9 pDevice, D3DPRESENT_PARAMETERS* pPresentationParameters) -> HRESULT {
+		ImGui_ImplDX9_InvalidateDeviceObjects();
+		render.ResetDevice();
+		HRESULT hres = r3dResetEx.CallOriginal(pDevice, pPresentationParameters);
+		if (hres == D3DERR_INVALIDCALL)
+		{
+			render.LostDevice();
+			ImGui_ImplDX9_CreateDeviceObjects();
+		}
+		return hres;
+		});
+
+}
+void ImGuiEx(LPDIRECT3DDEVICE9 pDevice)
+{
+	//DirectxMenu(pDevice);
+	if (LSUtils::GetKeyPressed(VK_INSERT))
+	{
+		MenuIsOpen = !MenuIsOpen;
+	}
+	static bool nope = true;
+	if (nope)
+	{
+		GameWindow = FindWindowA(0, "League of Legends (TM) Client");
+
+		ImGui::CreateContext();
+		def_wndproc = reinterpret_cast<WNDPROC>(SetWindowLongPtr(GameWindow, GWLP_WNDPROC, LONG_PTR(hkWndProc)));
+		//SetWindowsHookEx(WH_GETMESSAGE, DXInputHook, 0, GetCurrentThreadId());
+		ImGui_ImplDX9_Init(GameWindow, pDevice);
+		ImGui_ImplDX9_CreateDeviceObjects();
+		ui::StyleColorsMaze();
+		nope = false;
+	}
+	ImGui_ImplDX9_NewFrame();
+	LSMenu();
+	ui::EndFrame();
+	ui::Render();
+	ImGui_ImplDX9_RenderDrawData(ui::GetDrawData());
+}
 LRESULT WINAPI hkWndProc(HWND window, UINT message_type, WPARAM w_param, LPARAM l_param) {
 	
 	if (MenuIsOpen)
@@ -75,12 +263,10 @@ void DirectxMenu(LPDIRECT3DDEVICE9 pDevice)
 	pDevice->SetSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_POINT);
 	pDevice->SetSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_NONE);
 }
-
 //int HataYakala(int code, PEXCEPTION_POINTERS ex) {
 //	printf("Hata Kodu : %p  , Lokasyon : %p\n", code, ex->ExceptionRecord->ExceptionAddress);
 //	return EXCEPTION_EXECUTE_HANDLER;
 //}
-
 void LSMenu()
 {
 	if (MenuIsOpen)
@@ -117,34 +303,6 @@ void D3DXMatrixDraw(const D3DXMATRIX *pM)
 	render.DrawString(120, 160, D3DCOLOR_ARGB(255, 255, 255, 255), DT_CENTER, 16, "%3.3f %3.3f %3.3f %3.3f", pM->_41, pM->_42, pM->_43, pM->_44);
 }
 
-
-void ImGuiEx(LPDIRECT3DDEVICE9 pDevice)
-{
-	//DirectxMenu(pDevice);
-	if (LSUtils::GetKeyPressed(VK_INSERT))
-	{
-		MenuIsOpen = !MenuIsOpen;
-	}
-	static bool nope = true;
-	if (nope)
-	{
-		GameWindow = FindWindowA(0, "League of Legends (TM) Client");
-		
-		ImGui::CreateContext();
-		def_wndproc = reinterpret_cast<WNDPROC>(SetWindowLongPtr(GameWindow, GWLP_WNDPROC, LONG_PTR(hkWndProc)));
-		//SetWindowsHookEx(WH_GETMESSAGE, DXInputHook, 0, GetCurrentThreadId());
-		ImGui_ImplDX9_Init(GameWindow, pDevice);
-		ImGui_ImplDX9_CreateDeviceObjects();
-		ui::StyleColorsMaze();
-		nope = false;
-	}
-	ImGui_ImplDX9_NewFrame();
-	LSMenu();
-	ui::EndFrame();
-	ui::Render();
-	ImGui_ImplDX9_RenderDrawData(ui::GetDrawData());
-}
-
 template<typename type>
 class GetSet
 {
@@ -153,15 +311,14 @@ public:
 	type get() const { return 0; }
 	
 };
-
 //typedef void(__thiscall* tIssueOrder)(LSLObject *Player, int Mode, RVector3* Pos, LSLObject *target, int a4, int a5, char a7);
 //tIssueOrder issueOrderx = reinterpret_cast<tIssueOrder>(MAKEPTR(pfnIssueOrder));
 void r3dMainLoop()
 {
-	float health = 100;
-	DWORD ptrr = reinterpret_cast<DWORD>(&health);
+	//float health = 100;
+	//DWORD ptrr = reinterpret_cast<DWORD>(&health);
 
-	ENGINE_MSG("Start r3dMainLoop");
+	//ENGINE_MSG("Start r3dMainLoop");
 
 	do
 	{
@@ -169,16 +326,16 @@ void r3dMainLoop()
 	} while (!Game::IsInGame());
 	Sleep(1000);
 
-	ENGINE_MSG("IsInGame");
+	//ENGINE_MSG("IsInGame");
 
 	// temporal
 	//pComponent::ComponentEvents_onStart();
 	
-	auto local = ObjectManager::GetPlayer();
-	string* a = &local->GetName();
-	ENGINE_MSG(a->c_str());
+	//auto local = ObjectManager::GetPlayer();
+	//string* a = &local->GetName();
+	//ENGINE_MSG(a->c_str());
 	
-	return;
+	//return;
 	
 	while (true)
 	{
@@ -208,165 +365,4 @@ void r3dMainLoop()
 		
 		Sleep(1);
 	}
-}
-
-
-
-void r3dHooks()
-{
-	if (!vTable)
-		return;
-	//static ObjectManager *objectmanager = new ObjectManager();
-	//OrbWalker*walker = new OrbWalker();
-	//walker->Add();
-
-	
-	//targetselector->Add();
-
-	//LCoreTest*test = new LCoreTest();
-	//test->Add();
-	
-	/*TosbikBlitz * blitz = new TosbikBlitz();
-	blitz->Add();
-	TospikThresh*thresh = new TospikThresh();
-	thresh->Add();
-
-	TospikCait*cait = new TospikCait();
-	cait->Add();*/
-
-	//OrbWalker*walker = new OrbWalker();
-	//walker->Add();
-
-	//TospikBrand*brand = new TospikBrand();
-	//brand->Add();
-	//
-	//White* white = new White();
-	//white->Add();
-	
-	float health = 100;
-	DWORD ptrr = reinterpret_cast<DWORD>(&health);
-
-	//ENGINE_MSG("Start r3dMainLoop");
-
-	do
-	{
-		Sleep(100);
-	} while (!Game::IsInGame());
-	Sleep(1000);
-
-	//ENGINE_MSG("IsInGame");
-
-	// temporal
-	//pComponent::ComponentEvents_onStart();
-
-	auto local = ObjectManager::GetPlayer();
-	string* a = &local->GetName();
-	
-	//ENGINE_MSG(a->c_str());
-	
-	//LSUtils::CreateThreadA(r3dMainLoop);
-	
-	return;
-	r3dEndScene.Apply(vTable[42], [](LPDIRECT3DDEVICE9 pDevice) -> HRESULT {
-		render.Attach(pDevice);
-
-		if (Game::IsInGame())
-		pComponent::ComponentsEvent_onRender();
-
-		ImGuiEx(pDevice);
-		
-		/*for (ObjectManager*tmp : ObjectManager::GetAllObjects())
-		{
-			RVector3 Screen;
-			if (tmp->GetObjectType() == ObjectManager::ObjectType::HERO)
-				if (render.r3dWorldToScreen(&tmp->GetPosition(), &Screen))
-				{
-					render.DrawString(Screen.x, Screen.y, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "object : %02x", tmp->GetObjectType());
-				}
-
-			if (tmp->GetObjectType() == ObjectManager::ObjectType::HERO)
-			{
-
-
-			}
-			else if (tmp->GetObjectType() == ObjectManager::ObjectType::MINION)
-			{
-				RVector3 Screen;
-				if (render.r3dWorldToScreen(&tmp->GetPosition(), &Screen))
-				{
-					render.DrawString(Screen.x, Screen.y, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "Minion");
-				}
-			}
-			else if (tmp->GetObjectType() == ObjectManager::ObjectType::TURRET)
-			{
-
-			}
-			else if (tmp->GetObjectType() == ObjectManager::ObjectType::INHIB)
-			{
-
-			}
-		}*/
-	
-		HRESULT pp = r3dEndScene.CallOriginal(pDevice);
-
-			
-
-		return pp;
-	});
-
-
-	r3dResetEx.Apply(vTable[16], [](LPDIRECT3DDEVICE9 pDevice, D3DPRESENT_PARAMETERS*pPresentationParameters) -> HRESULT {
-		ImGui_ImplDX9_InvalidateDeviceObjects();
-		render.ResetDevice();
-		HRESULT hres = r3dResetEx.CallOriginal(pDevice, pPresentationParameters);
-		if (hres == D3DERR_INVALIDCALL)
-		{
-			render.LostDevice();
-			ImGui_ImplDX9_CreateDeviceObjects();
-		}
-		return hres;
-	});
-	
-}
-
- void HookStart()
- {
-	 DWORD adr;
-	 DWORD hD3D = 0;
-	
-	 do
-	 {
-		 GameWindow = FindWindowA(0, "League of Legends (TM) Client");
-		 Sleep(100);
-	 } while (!GameWindow);
-	 hD3D = (DWORD)GetModuleHandleA("d3d9.dll");
-	 do
-	 {
-		 hD3D = (DWORD)GetModuleHandleA("d3d9.dll");
-	 } while (!hD3D);
-	 adr = LSUtils::FindPattern(hD3D, 0x128000, (PBYTE)"\xC7\x06\x00\x00\x00\x00\x89\x86\x00\x00\x00\x00\x89\x86", "xx????xx????xx");
-	 if (adr)
-	 {
-		 memcpy(&vTable, (void *)(adr + 2), 4);
-		 //ENGINE_MSG("pPlat Initialized\n");
-		 r3dHooks();
-	 }
- }
-
-BOOL WINAPI DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
-{
-	UNREFERENCED_PARAMETER(lpReserved);
-	switch (dwReason)
-	{
-	case DLL_PROCESS_ATTACH:
-		DisableThreadLibraryCalls(hModule);
-		//AllocConsole();
-		freopen("CONOUT$", "w", stdout);
-		LSUtils::CreateThreadA(HookStart);
-		//HookStart();
-		break;
-	default:
-		break;
-	}
-	return TRUE;
 }

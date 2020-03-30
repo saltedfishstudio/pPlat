@@ -1,0 +1,2 @@
+C:\Github\pPlat\Debug\bandicam.dll
+C:\Github\pPlat\Debug\bandicam.pdb

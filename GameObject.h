@@ -163,7 +163,6 @@ public:
 	{
 		return reinterpret_cast<bool*>(this + static_cast<int>(Offsets::oGameObject::IsDead));
 	}
-
 	
 	MAKE_GET(Team, uint, Offsets::oGameObject::Team);
 	MAKE_GET(BBox, BBox, Offsets::oGameObject::BBox);

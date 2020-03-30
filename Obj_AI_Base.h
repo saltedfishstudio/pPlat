@@ -1,7 +1,10 @@
 #pragma once
 #include "LBuffInstance.h"
+#include "AttackableUnit.h"
 #define MAKE_INFO(NUM) NUM*0x4
 #define MAKE_BLOB(NUM)  (0xE48 + ##NUM)
+
+class GameObject;
 
 class
 	DLLEXPORT CharDataInfo
